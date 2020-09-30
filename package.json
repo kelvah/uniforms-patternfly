@@ -4,7 +4,7 @@
   "description": "Patternfly forms for uniforms",
   "repository": "git@github.com:aerogear/uniforms-patternfly.git",
   "author": "Gianluca <gzuccare@redhat.com>",
-  "license": "Apache-2.0", 
+  "license": "Apache-2.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -23,9 +23,12 @@
     "@babel/preset-env": "7.11.0",
     "@babel/preset-react": "7.10.4",
     "@babel/preset-typescript": "7.10.4",
+    "@patternfly/react-core": "4.45.1",
+    "@patternfly/react-icons": "4.7.2",
     "@testing-library/react": "10.4.9",
+    "@types/cheerio": "^0.22.10",
     "@types/classnames": "2.2.10",
-    "@types/enzyme": "3.10.5",
+    "@types/enzyme": "^3.10.7",
     "@types/invariant": "2.2.33",
     "@types/jest": "25.2.3",
     "@types/lodash": "4.14.149",
@@ -64,7 +67,7 @@
     "uniforms": "3.0.0-rc.3",
     "uniforms-bridge-simple-schema-2": "3.0.0-rc.3"
   },
-  "dependencies": {
+  "peerDependencies": {
     "@patternfly/react-core": "4.45.1",
     "@patternfly/react-icons": "4.7.2"
   },
