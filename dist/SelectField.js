@@ -52,7 +52,7 @@ function RenderSelect(props) {
     var selectedOptions = props.allowedValues.map(function (value) { return (react_1["default"].createElement(react_core_1.SelectOption, { key: value, value: value }, props.transform ? props.transform(value) : value)); });
     if (props.placeholder)
         selectedOptions.unshift(react_1["default"].createElement(react_core_1.SelectOption, { key: props.allowedValues.length, isDisabled: true, isPlaceholder: true, value: props.placeholder }));
-    return (wrapField_1["default"](props, react_1["default"].createElement(react_core_1.Select, { isDisabled: props.disabled, id: props.id, variant: props.fieldType === Array ? react_core_1.SelectVariant.typeaheadMulti : react_core_1.SelectVariant.single, name: props.name, placeholderText: props.placeholder, selections: selected, onToggle: function () { return setExpanded(!expanded); }, onSelect: handleSelect, value: props.value || (props.fieldType === Array ? [] : undefined) }, selectedOptions)));
+    return (wrapField_1["default"](props, react_1["default"].createElement(react_core_1.Select, { isDisabled: props.disabled, id: props.id, variant: props.fieldType === Array ? react_core_1.SelectVariant.typeaheadMulti : react_core_1.SelectVariant.single, name: props.name, placeholderText: props.placeholder, isOpen: expanded, selections: selected, onToggle: function () { return setExpanded(!expanded); }, onSelect: handleSelect, value: props.value || (props.fieldType === Array ? [] : undefined) }, selectedOptions)));
 }
 function SelectField(_a) {
     var checkboxes = _a.checkboxes, props = tslib_1.__rest(_a, ["checkboxes"]);
